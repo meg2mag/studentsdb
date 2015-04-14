@@ -1,5 +1,1 @@
-# pershiy
-
-
-111
-# studentsdb
+/home/ryndin/data/work/virtualenvs/studentsdb/src/studentsdb

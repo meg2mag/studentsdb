@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Сервіс Обліку Студентів</title>
+        <meta name="description" content="Система Обліку Студентів Навчального Закладу">
+
+        <!-- Include Styles -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+
+    </head>
+
+    <body>
+
+        <!-- Start Container -->
+        <div class="container">
+
+
+            <!-- Start Main Page Content -->
+            <div class="row" id="content-columns">
+                <div class="col-xs-12" id="content-column">
+
+                    <h2>Форма редагування Студента</h2>
+
+                    <!-- Start Student Form -->
+                    <form method="POST" class="form-horizontal" role="form">
+
+                        
+                        <div class="form-group">
+                            <label for="inputFirstName" class="col-sm-2 control-label">Ім'я*</label>
+                            <div class="col-sm-3">
+                                <input type="text" id="inputFirstName"
+                                       class="form-control" required="required" placeholder="Іван">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputMiddleName" class="col-sm-2 control-label">По батькові</label>
+                            <div class="col-sm-3">
+                                <input type="text" id="inputMiddleName"
+                                       class="form-control" placeholder="Іванович">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputLastName" class="col-sm-2 control-label">Прізвище*</label>
+                            <div class="col-sm-3">
+                                <input type="text" id="inputLastName"
+                                       class="form-control" required="required" placeholder="Іваненко">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputCardNumber" class="col-sm-2 control-label">№ Білету*</label>
+                            <div class="col-sm-3">
+                                <input type="number" id="inputCardNumber"
+                                       class="form-control" min="1" required="required" placeholder="123">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputBirthday" class="col-sm-2 control-label">Дата народження</label>
+                            <div class="col-sm-3">
+                                <input type="date" id="inputBirthday" class="form-control">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Фото</label>
+                            <div class="col-sm-1">
+                                <span>Наразі:</span><br/>
+                                <a href="">Очистити</a>
+                            </div>
+                            <div class="col-sm-5">
+                                <a href="#" id="aPhotoUrl">photo.png</a>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="inputPhoto" class="col-sm-2 control-label"></label>
+                            <div class="col-sm-1">
+                                <p>Змінити: </p>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="file" id="inputPhoto">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="input" class="col-sm-2 control-label">Група*</label>
+                            <div class="col-sm-3">
+                                <select name="" id="input" class="form-control" required="required">
+                                    <option value="">ПМ-11</option>
+                                    <option value="">ПМ-21</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="input" class="col-sm-2 control-label">Додаткові нотатки</label>
+                            <div class="col-sm-3">
+                                <textarea class="form-control" id="textNotes" rows="5" placeholder="тест d"></textarea>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group well well-sm">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <button type="submit" class="btn btn-primary">Зберегти</button>
+                                <button type="submit" class="btn btn-link">Скасувати</button>
+                            </div>
+                        </div>
+
+                    </form>
+                    <!-- End Student Form -->
+
+                </div>
+            </div>
+            <!-- End Main Page Content -->
+
+            <!-- Start Footer -->
+            <div class="row" id="footer">
+                <div class="col-xs-12">
+                    &copy; 2015 Сервіс Обліку Студентів
+                </div>
+            </div>
+            <!-- End Footer -->
+        </div>
+
+        <!-- Javascripts Section -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    </body>
+</html>
+
